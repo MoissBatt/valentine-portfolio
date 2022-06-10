@@ -1,0 +1,5 @@
+export enum SectionDevEnum {
+    FORMATIONS = 'FORMATIONS',
+    EXPERIENCES = 'EXPERIENCES',
+    COMPETENCES = 'COMPETENCES'
+}

@@ -1,0 +1,51 @@
+.side-left{
+    background-image: url("../../assets/home-page/side-left.png");
+    background-size: cover;
+    background-position: right top;
+    height: 100vh;
+}
+
+.side-right{
+    background-image: url("../../assets/home-page/side-right.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.size{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE4C4;
+}
+
+.color-back{
+    background-color: #FFE4C4;
+}
+
+#router{
+    overflow-y: auto;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e4d9a8;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e0d87f;
+}
+
+.modals:hover{
+    color: #C6554F;
+}

@@ -1,0 +1,40 @@
+.card{
+    background-color: #fff5f5;
+    border-radius: 10px;
+}
+
+.margin-social-dev{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.margin-social-cos, .margin-social-dev{
+    margin-bottom: 15px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.red-color{
+    color: #C6554F;
+}
+
+.know-more-btn{
+    background-color: bisque;
+}
+
+@media screen and (max-width: 1400px) {
+    .formation {
+      flex-direction : column;
+    }
+}
+
+.diplomes{
+    background-color: bisque;
+    box-shadow: none;
+}
+
+.no-margin{
+    margin-bottom: 0 !important;
+}

@@ -1,0 +1,59 @@
+.red-color{
+    color: #C6554F;
+}
+
+.conventions{
+    overflow-x: auto;
+    height: 290px;
+    white-space: nowrap;
+}
+
+.conv-container{
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-shadow: black 1px 0 10px;
+}
+
+.conv-img{
+    height: 250px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+}
+
+.title {
+    font-weight: bold;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.subtitle {
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    height: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e4d9a8;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e0d87f;
+}

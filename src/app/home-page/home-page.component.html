@@ -1,0 +1,18 @@
+<div class="d-flex color-back">
+    <div class="container col-lg-3 col-md-2 d-sm-none d-md-block d-none p-0 side-left">
+    </div>
+
+    <div class="container col-lg-6 col-md-8 col-sm-12 p-0 size">
+        <app-navbar></app-navbar>
+        
+        <div id="router" class="custom-scrollbar">
+            <router-outlet></router-outlet>
+            <footer class="my-0 mx-auto">
+                <p class="text-center">Valentine Bouché © 2022 | v0.1 | <span class="modals" (click)="openMentionsModal()">Mentions légales</span></p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="container col-lg-3 col-md-2 d-sm-none d-md-block d-none p-0 side-right">
+    </div>
+</div>

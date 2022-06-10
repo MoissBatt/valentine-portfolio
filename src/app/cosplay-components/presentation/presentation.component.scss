@@ -1,0 +1,27 @@
+.presentation{
+    text-align: justify ;
+}
+
+.red-color{
+    color: #C6554F;
+}
+
+.cosplayCarousel{
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .cosplayCarousel{
+        width: 100%;
+    }
+}
+
+.carousel-arrow{
+    font-size: 30px;
+}
+
+.carousel-item{
+    text-shadow: black 2px 2px 2px;
+}

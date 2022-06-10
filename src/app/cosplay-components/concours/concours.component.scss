@@ -1,0 +1,32 @@
+.videoViewer{
+    height: 252px;
+    width: 450px;
+    min-width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.red-color{
+    color: #C6554F;
+}
+
+@media screen and (max-width: 1550px) {
+    .video, .mag{
+        flex-direction: column;
+    }
+    
+    .videoViewer{
+        order: 2;
+    }
+    .video-txt{
+        order: 1;
+    }
+}
+
+.justify{
+    text-align: justify;
+}
+
+.magViewer{
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

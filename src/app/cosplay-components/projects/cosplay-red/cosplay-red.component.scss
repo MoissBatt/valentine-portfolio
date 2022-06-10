@@ -1,0 +1,89 @@
+.presentation{
+    text-align: justify;
+}
+
+.refViewer{
+    width: 300px;
+    max-height: 290px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1360px) {
+    .refViewer{
+        width: 85%;
+        max-height: none;
+        align-self: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        order: 1;
+    }
+    .pres{
+        flex-direction: column;
+       
+    }
+    .presentation{
+        order: 2;
+    }
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.red-color{
+    color: #C6554F;
+}
+
+.carousel-arrow{
+    font-size: 30px;
+}
+
+.carousel-item{
+    text-shadow: black 2px 2px 2px;
+}
+
+.carousel-portrait{
+    max-width: 400px;
+}
+
+.cosplayCarousel{
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+.pictures{
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .cosplayCarousel{
+        width: 100%;
+    }
+    .pictures{
+        flex-direction: column;
+    }
+    .credits{
+        align-self: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .carousel-portrait{
+        align-self: center;
+    }
+}
+
+.navigation{
+    justify-content: space-between;
+}
+
+.navigation-btn{
+    background-color: rgb(223, 158, 74);
+    color: rgb(255, 255, 255);
+}
+
+.navigation-btn:hover{
+    background-color: rgb(223, 158, 74);
+    color: rgb(255, 255, 255);
+}
