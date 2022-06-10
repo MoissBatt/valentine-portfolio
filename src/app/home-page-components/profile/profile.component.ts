@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { tap } from 'rxjs';
+import { tap, timer } from 'rxjs';
 import { ScrollService } from '../../service/scroll-service';
 import { SectionEnum } from '../../model/section-enum';
 
@@ -28,6 +28,22 @@ export class ProfileComponent implements OnInit {
         console.log('No ' + sectionToScroll + ' to scroll in')
         break;
     }
+  }
+
+  clickOnSection(section: string) {
+    timer(1).pipe(tap(x => {
+      switch (section) {
+        case ('PRESENTATION'):
+          this.scrollService.notifyScroll$(SectionEnum.PRESENTATION);
+          break;
+        case ('FORMATIONS'):
+          this.scrollService.notifyScroll$(SectionEnum.FORMATIONS);
+          break;
+        default:
+          console.log('No section: ' + section);
+          break;
+      }
+    })).subscribe();
   }
  
 }

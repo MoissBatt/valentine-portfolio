@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { tap } from 'rxjs';
+import { tap, timer } from 'rxjs';
 import { ScrollService } from '../service/scroll-service';
 import { SectionEnum } from '../model/section-enum';
 
@@ -17,24 +17,25 @@ export class DevComponent implements OnInit {
 
   ngOnInit(): void {
     this.scrollService.getScroll$().pipe(tap(elementToScroll => this.scrollToSpecificSection(elementToScroll))).subscribe();
-
   }
 
   public scrollToSpecificSection(sectionToScroll: SectionEnum): void {
-    switch (sectionToScroll) {
-      case SectionEnum.COMPETENCES:
-        this.scrollService.scrollToElement(this.sectionDivCompetence);
-        break;
-      case SectionEnum.EXPERIENCES:
-        this.scrollService.scrollToElement(this.sectionDivExperience);
-        break;
-      case SectionEnum.FORMATIONS:
-        this.scrollService.scrollToElement(this.sectionDivFormation)
-        break;
-      default:
-        console.log('No ' + sectionToScroll + ' to scroll in')
-        break;
-    }
+    timer(1).pipe(tap(x => {
+      switch (sectionToScroll) {
+        case SectionEnum.COMPETENCES:
+          this.scrollService.scrollToElement(this.sectionDivCompetence);
+          break;
+        case SectionEnum.EXPERIENCES:
+          this.scrollService.scrollToElement(this.sectionDivExperience);
+          break;
+        case SectionEnum.FORMATIONS:
+          this.scrollService.scrollToElement(this.sectionDivFormation)
+          break;
+        default:
+          console.log('No ' + sectionToScroll + ' to scroll in')
+          break;
+      }
+    })).subscribe();
   }
   
 }
