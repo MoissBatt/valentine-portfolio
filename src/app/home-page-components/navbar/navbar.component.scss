@@ -82,6 +82,12 @@ ul li ul.dropdown li {
     .logo > a > img {
         height: 64px;
     }
+    .logo-link{
+        padding: 0px !important;
+    }
+    .nav-dev-item, .nav-cos-item, .dropdown-item{
+        padding: 5px !important;
+    }
 }
 
 @media (max-width: 470px) {
