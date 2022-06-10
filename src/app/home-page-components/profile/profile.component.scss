@@ -27,3 +27,12 @@
 .know-more-btn{
     background-color: bisque;
 }
+
+@media screen and (max-width: 1200px) {
+    .dev-cos-overview{
+        flex-direction: column;
+    }
+    .category-card{
+        width: 90%;
+    }
+}
