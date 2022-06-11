@@ -1,5 +1,6 @@
 .navbar{
     background-color: #F2E284;
+    z-index: 9999;
 }
 
 .navbar-nav{
@@ -78,7 +79,7 @@ ul li ul.dropdown li {
     color: #C6554F !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
     .logo-link{
         padding: 5px !important;
     }
