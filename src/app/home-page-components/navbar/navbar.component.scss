@@ -78,15 +78,18 @@ ul li ul.dropdown li {
     color: #C6554F !important;
 }
 
-@media (max-width: 576px) {
-    .logo > a > img {
-        height: 64px;
-    }
+@media (max-width: 800px) {
     .logo-link{
-        padding: 10px !important;
+        padding: 5px !important;
     }
     .nav-dev-item, .nav-cos-item, .dropdown-item{
         padding: 5px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo > a > img {
+        height: 64px;
     }
 }
 

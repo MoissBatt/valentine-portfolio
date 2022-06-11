@@ -30,6 +30,8 @@ a{
 
 .icon-td{
     width: 50px;
+    padding-right: 10px;
+    padding-left: 2px;
 }
 
 .table-project{
@@ -43,9 +45,19 @@ a{
     background-color: rgb(174, 219, 205);
 }
 
-.project-title, .key{
-    font-size: 15px;
+.key{
     margin-bottom: 3px;
+}
+
+
+.project-title{
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.red-title{
+    color: rgb(184, 121, 5);
 }
 
 .text-muted{
@@ -58,7 +70,7 @@ a{
         margin-bottom: 3px;
     }
     .project-title{
-        font-size: 13px;
+        font-size: 14px;
     }
     .text-muted{
         font-size: 13px;
@@ -73,13 +85,18 @@ a{
     }
 }
 
+.rounded-circle{
+    width: 60px;
+    height: 60px;
+}
+
 @media screen and (max-width: 1050px) {
     .key{
         font-size: 11px;
         margin-bottom: 3px;
     }
     .project-title{
-        font-size: 11px;
+        font-size: 14px;
     }
     .text-muted{
         font-size: 11px;
@@ -91,6 +108,10 @@ a{
     .icon{
         font-size: 25px;
         color:#e7d676;
+    }
+    .rounded-circle{
+        width: 40px;
+        height: 40px;
     }
     
 }
