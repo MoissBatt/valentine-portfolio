@@ -11,30 +11,7 @@
     padding-bottom: 5px;
     gap: 15px;
     background-color: #fff5f5 !important;
-}
-
-.stage-pill{
-    background-color: #cf943a;
-    margin-left: auto;
-}
-
-.cdd-pill{
-    background-color: #58790d;
-    margin-left: auto;
-}
-
-.benevole-pill{
-    background-color: #611b7c;
-    margin-left: auto;
-}
-
-.mandat-pill{
-    background-color: #1b507c;
-    margin-left: auto;
-}
-
-.accordion-button::after{
-    margin-left: 0 !important;
+    padding: 5px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -47,10 +24,42 @@
 }
 
 .date{
-    width: 160px;
+    width: 20%;
     text-align: right;
 }
 
 .entreprise{
-    width: 180px;
+    width: 70%;
 }
+
+.entreprise-txt{
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.poste-txt{
+    margin-bottom: 0;
+}
+
+
+.rounded-circle{
+    width: 45px;
+    height: 45px;
+}
+
+@media screen and (max-width: 1256px) {
+    .entreprise{
+        flex-direction: column;
+    }
+    .entreprise-txt{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .rounded-circle{
+        width: 35px;
+        height: 35px;
+    }
+}
+
