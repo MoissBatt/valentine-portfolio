@@ -5,6 +5,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.magViewer{
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .red-color{
     color: #C6554F;
 }
@@ -22,11 +27,18 @@
     }
 }
 
+@media (max-width: 576px) {
+    .videoViewer{
+        width: 95%;
+        min-width: 95%;
+    }
+    .magViewer{
+        width: 90%;
+    }
+    
+}
+
 .justify{
     text-align: justify;
 }
 
-.magViewer{
-    width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
