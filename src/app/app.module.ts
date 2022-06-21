@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
-import {YouTubePlayerModule} from '@angular/youtube-player';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,11 +49,12 @@ import { CosplayTyrandeComponent } from './cosplay-components/projects/cosplay-t
     CosplayThrallComponent,
     CosplayPbComponent,
     CosplaySteampunkComponent,
-    CosplayTyrandeComponent
+    CosplayTyrandeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatMenuModule,
     BrowserAnimationsModule,
     MdbModalModule,
     YouTubePlayerModule

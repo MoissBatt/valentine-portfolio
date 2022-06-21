@@ -1,6 +1,6 @@
 .navbar{
     background-color: #F2E284;
-    z-index: 9999;
+    z-index: 1199;
 }
 
 .navbar-nav{
@@ -9,23 +9,14 @@
 
 .nav-link{
     color: #C6554F !important;
+    background-color: #F2E284;
+    border: 0;
     font-weight: bold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding-bottom: 0;
 }
-
 
 .nav-link:hover{
-    color: #F2E284 !important;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #8b4847;
-}
-
-.dropdown{
-    margin-top: 35px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    color: #690f0c !important;
 }
 
 .logo{
@@ -39,34 +30,38 @@ ul {
 ul li {
     display: inline-block;
     position: relative;
-    line-height: 21px;
     margin: auto;
     height: 37px;
 }
 ul li a {
-    display: block;
     padding: 8px 25px;
-    color: #C6554F;
 }
-.dropdown-dev:hover ~ .nav-dev-item, .dropdown-cos:hover ~ .nav-cos-item{
+
+::ng-deep .dropdown{
+    background: #FFE4C4 !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+::ng-deep .mat-menu-content:not(:empty) {
+    padding: 0 !important;
+}
+
+button.dropdown-item{
+    background: #FFE4C4 !important;
+    color: #C6554F;
+    font-size: medium;
+}
+
+button.dropdown-item:hover{
     color: #F2E284 !important;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom: 10px;
     background-color: #8b4847;
 }
-ul li ul.dropdown {
-    min-width: 100%; /* Set width of the dropdown */
-    background: #FFE4C4;
-    display: none;
-    position: absolute;
-    z-index: 999;
-    left: 0;
-}
-ul li:hover ul.dropdown {
-    display: block; /* Display the dropdown */
-}
-ul li ul.dropdown li {
-    display: block;
+
+button.dropdown-item:hover{
+    background: #8b4847 !important;
+    color: #FFE4C4;
 }
 
 .dropdown-item:hover{
@@ -74,16 +69,11 @@ ul li ul.dropdown li {
     color: #F2E284 !important;
 }
 
-.dropdown-item:focus{
-    background: #FFE4C4;
-    color: #C6554F !important;
-}
-
 @media (max-width: 1100px) {
     .logo-link{
         padding: 5px !important;
     }
-    .nav-dev-item, .nav-cos-item, .dropdown-item{
+    button.dropdown-item{
         padding: 5px !important;
     }
 }
@@ -95,19 +85,7 @@ ul li ul.dropdown li {
 }
 
 @media (max-width: 470px) {
-    .nav-dev-item, .nav-cos-item {
+    .nav-link {
         font-size: 0.9em;
     }
-}
-
-.myClass{
-    color: #0c5e21;
-}
-
-.myClass:not(:focus):hover{
-    color: #C6554F;
-}
-
-.success{
-    color: #4a4ccf;
 }

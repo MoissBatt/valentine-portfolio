@@ -1,58 +1,37 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-        <ul class="navbar-nav flex-row mb-2 mb-lg-0">
-          <li class="nav-item d-flex">
-            <ul class="dropdown shadow-1-strong dropdown-dev">
-              <li>
-                <a class="text-center dropdown-item" (click)="clickOnSection('FORMATIONS')" routerLink="/dev" [skipLocationChange]="true">Formations</a>
-              </li>
-              <li>
-                <a class="text-center dropdown-item" (click)="clickOnSection('EXPERIENCES')" routerLink="/dev" [skipLocationChange]="true">Expériences</a>
-              </li>
-              <li>
-                <a class="text-center dropdown-item" (click)="clickOnSection('COMPETENCES')" routerLink="/dev" [skipLocationChange]="true">Compétences</a>
-              </li>
-            </ul>
-            <a class="nav-link align-self-center nav-dev-item" 
-                role="button" 
-                (click)="clickOnSection('FORMATIONS')"
-                routerLink="/dev" [skipLocationChange]="true">
-                DÉVELOPPEUSE
-            </a>
-          </li>
-          <li class="nav-item d-flex logo">
-            <a class="navbar-brand m-0 logo-link" (click)="clickOnSection('HOME')" routerLink="" [skipLocationChange]="true">
-                <img
-                  src="assets/home-page/Pp Jojo Moissbatt transparent.png"
-                  height="130"
-                  alt="Profile picture"
-                  loading="lazy"
-                  class="m-0"
-                />
-              </a>
-          </li>
-          <li class="nav-item d-flex side-nav">
-            <ul class="dropdown shadow-1-strong dropdown-cos">
-                <li>
-                  <a class="text-center dropdown-item" (click)="clickOnSection('PRESENTATION')" routerLink="/cosplay" [skipLocationChange]="true">Présentation</a>
-                </li>
-                <li>
-                  <a class="text-center dropdown-item" (click)="clickOnSection('CONVENTIONS')" routerLink="/cosplay" [skipLocationChange]="true">Conventions</a>
-                </li>
-                <li>
-                  <a class="text-center dropdown-item" (click)="clickOnSection('CONCOURS')" routerLink="/cosplay" [skipLocationChange]="true">Concours</a>
-                </li>
-                <li>
-                  <a class="text-center dropdown-item" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true">Projets</a>
-                </li>
-            </ul>
-            <a class="nav-link align-self-center nav-cos-item" 
-                role="button"
-                (click)="clickOnSection('PRESENTATION')"
-                routerLink="/cosplay" [skipLocationChange]="true">
-                COSPLAYEUSE
-            </a>
-          </li>
-        </ul>
-      </div>
-  </nav>
+  <div class="container">
+    <ul class="navbar-nav flex-row mb-2 mb-lg-0">
+      <li class="nav-item d-flex">
+        <button class="nav-link" mat-button [matMenuTriggerFor]="menuDev">DÉVELOPPEUSE</button>
+        <mat-menu #menuDev="matMenu" class="dropdown">
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('FORMATIONS')" routerLink="/dev"
+          [skipLocationChange]="true">Formations</button>
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('EXPERIENCES')" routerLink="/dev"
+          [skipLocationChange]="true">Expériences</button>
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('COMPETENCES')" routerLink="/dev"
+          [skipLocationChange]="true">Compétences</button>
+        </mat-menu>
+      </li>
+      <li class="nav-item d-flex logo">
+        <a class="navbar-brand m-0 logo-link" (click)="clickOnSection('HOME')" routerLink=""
+          [skipLocationChange]="true">
+          <img src="assets/home-page/Pp Jojo Moissbatt transparent.png" height="130" alt="Profile picture"
+            loading="lazy" class="m-0" />
+        </a>
+      </li>
+      <li class="nav-item d-flex">
+        <button class="nav-link" mat-button [matMenuTriggerFor]="menuCos">COSPLAYEUSE</button>
+        <mat-menu #menuCos="matMenu" class="dropdown">
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('PRESENTATION')" routerLink="/cosplay"
+          [skipLocationChange]="true">Présentation</button>
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('CONVENTIONS')" routerLink="/cosplay"
+          [skipLocationChange]="true">Conventions</button>
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('CONCOURS')" routerLink="/cosplay"
+          [skipLocationChange]="true">Concours</button>
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('PROJETS')" routerLink="/cosplay"
+          [skipLocationChange]="true">Projets</button>
+        </mat-menu>
+      </li>
+    </ul>
+  </div>
+</nav>
