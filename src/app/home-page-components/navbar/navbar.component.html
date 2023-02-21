@@ -4,10 +4,10 @@
       <li class="nav-item d-flex">
         <button class="nav-link" mat-button [matMenuTriggerFor]="menuDev">DÉVELOPPEUSE</button>
         <mat-menu #menuDev="matMenu" class="dropdown">
-          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('FORMATIONS')" routerLink="/dev"
-          [skipLocationChange]="true">Formations</button>
           <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('EXPERIENCES')" routerLink="/dev"
           [skipLocationChange]="true">Expériences</button>
+          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('FORMATIONS')" routerLink="/dev"
+          [skipLocationChange]="true">Formations</button>
           <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('COMPETENCES')" routerLink="/dev"
           [skipLocationChange]="true">Compétences</button>
         </mat-menu>
