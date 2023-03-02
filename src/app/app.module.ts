@@ -28,6 +28,9 @@ import { CosplayThrallComponent } from './cosplay-components/projects/cosplay-th
 import { CosplayPbComponent } from './cosplay-components/projects/cosplay-pb/cosplay-pb.component';
 import { CosplaySteampunkComponent } from './cosplay-components/projects/cosplay-steampunk/cosplay-steampunk.component';
 import { CosplayTyrandeComponent } from './cosplay-components/projects/cosplay-tyrande/cosplay-tyrande.component';
+import { CosplayTarecgosaComponent } from './cosplay-components/projects/cosplay-tarecgosa/cosplay-tarecgosa.component'; 
+import { CosplayAuronComponent } from './cosplay-components/projects/cosplay-auron/cosplay-auron.component'; 
+import { CosplaySogekingComponent } from './cosplay-components/projects/cosplay-sogeking/cosplay-sogeking.component'; 
 
 @NgModule({
   declarations: [
@@ -50,6 +53,9 @@ import { CosplayTyrandeComponent } from './cosplay-components/projects/cosplay-t
     CosplayPbComponent,
     CosplaySteampunkComponent,
     CosplayTyrandeComponent,
+    CosplayTarecgosaComponent,
+    CosplayAuronComponent,
+    CosplaySogekingComponent
   ],
   imports: [
     BrowserModule,

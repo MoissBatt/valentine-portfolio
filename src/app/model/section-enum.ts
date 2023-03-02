@@ -11,5 +11,8 @@ export enum SectionEnum {
     TYRANDE = 'TYRANDE',
     RED = 'RED',
     STEAMPUNK = 'STEAMPUNK',
-    PB = 'PB'
+    PB = 'PB',
+    TARECGOSA = 'TARECGOSA',
+    AURON = 'AURON',
+    SOGEKING = 'SOGEKING'
 }

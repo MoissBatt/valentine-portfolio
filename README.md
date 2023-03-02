@@ -5,6 +5,7 @@ Portfolio de Valentine Bouché, étudiante en Master 2 MIAGE à l'IDMC de Nancy,
 - Système de mailing pour contact
 
 **Changelog :**
+- v3.0 - 02/03/2023 : Nouveau composant concours - MaJ convention & projets
 - v2.5 - 21/02/2023 : MaJ concours Avignon & CV à jour
 - v2.4 - 18/11/2022 : MaJ concours Hero Festival Marseille
 - v2.3 - 21/10/2022 : MaJ concours Manga Hora Aubagne
