@@ -1,0 +1,24 @@
+<div #sectionDivAuron class="pt-1">
+    <h3 class="red-color m-1 text-center">Auron (en cours)</h3>
+    <h4 class="red-color m-2 text-center">Final Fantasy X</h4>
+    <div class="m-2 d-flex justify-content-center pres">
+        <p class="presentation m-2">
+            Ce projet est un peu particulier, c'est le premier que je ne réaliserai pas pour moi mais pour mon copain !
+            Je vous présente <span class="red-color">Auron</span> !
+            
+            C'est lui qui a choisi le personnage et je suis contente de pouvoir m'entraîner en couture avec ce projet.
+            
+            <br><br> Il est possible de suivre mon avancement sur ce projet sur  
+            <a style="color: #ac2bac;" target="_blank" href="https://www.instagram.com/moissbatt_cosplay/">instagram !</a>
+        </p>
+        <img class="refViewer m-2"  alt="Reference du cosplay" src="assets/cosplay/projets/Auron_ref.PNG">
+    </div>
+
+    <div class="m-2">
+        <div class="d-flex navigation">
+            <button type="button" (click)="clickOnSection('SOGEKING')" routerLink="/cosplay/sogeking" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Sogeking</button>
+            <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
+            <button type="button" (click)="clickOnSection('TARECGOSA')" routerLink="/cosplay/tarecgosa" [skipLocationChange]="true" class="btn navigation-btn">Tarecgosa <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>

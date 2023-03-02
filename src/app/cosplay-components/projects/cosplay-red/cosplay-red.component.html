@@ -1,27 +1,57 @@
 <div #sectionDivRed class="pt-1">
-    <h3 class="red-color m-1 text-center">Red (en cours)</h3>
-    <h4 class="red-color m-2 text-center">Transistor</h4>
-    <div class="m-2 d-flex justify-content-center pres">
-        <p class="presentation m-2">
-            Mon projet actuel est très ambitieux ! J'adore tellement la bande son et la direction artistique des jeux Supergiant Games et en particulier de Transistor.
-             Cela m'a amenée à choisir le personnage principal <span class="red-color">Red et son épée.</span>
-            
-            <br><br> J'ai choisi ce projet car cela demande de se lancer à corps perdu dans la couture pour réaliser sa magnifique robe. Il y a 
-            également l'épée qui va me demander énormément de recherche car j'ai pour ambition de la faire briller et parler !
-            <br><br> Red va donc être <span class="red-color">mon premier défi couture et électronique !</span>
-            <br><br> Il est possible de suivre mon avancement sur ce projet sur  
-            <a style="color: #ac2bac;" target="_blank" href="https://www.instagram.com/moissbatt_cosplay/">instagram !</a>
+  <h3 class="red-color m-1 text-center">Red (en cours)</h3>
+  <h4 class="red-color m-2 text-center">Transistor</h4>
+  <div class="m-2 d-flex justify-content-center pres">
+    <p class="presentation m-2">
+      J'adore tellement la bande son et la direction artistique des jeux Supergiant Games et en particulier de
+      Transistor.
+      Cela m'a amenée à choisir le personnage principal <span class="red-color">Red et son épée.</span>
+
+      <br><br> J'ai choisi ce projet car cela demande de se lancer à corps perdu dans la couture pour réaliser sa
+      magnifique robe. Il y a
+      également l'épée qui va me demander énormément de recherche car j'ai pour ambition de la faire briller et parler !
+      <br><br> Red va donc être <span class="red-color">mon premier défi couture et électronique !</span>
+    </p>
+    <img class="refViewer m-2" alt="Reference du cosplay" src="assets/cosplay/projets/Red_ref.PNG">
+  </div>
+
+  <h4 class="red-color m-2">Photographies</h4>
+  <div class="m-2 d-flex pictures">
+    <div class="card mx-2 credits mt-0 " style="width: 18rem;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title red-color text-center">Crédits 📸</h5>
+        <p class="card-text">
+          Voilà quelques photos de Red, prises à la Japan Expo Sud par 
+          <a class="red-color" target="_blank" href="https://www.facebook.com/michel.mikedaix">Michel Mikedaix</a>
         </p>
-        <img class="refViewer m-2"  alt="Reference du cosplay" src="assets/cosplay/projets/Red-ref.PNG">
+      </div>
     </div>
-
-    <div class="m-2">
-        <div class="d-flex navigation">
-            <button type="button" (click)="clickOnSection('THRALL')" routerLink="/cosplay/thrall" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Thrall</button>
-            <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
-            <button type="button" (click)="clickOnSection('STEAMPUNK')" routerLink="/cosplay/steampunk" [skipLocationChange]="true" class="btn navigation-btn">Steampunk <i class="fa-solid fa-arrow-right"></i></button>
+    <div id="carouselCosplayPres" class="carousel slide cosplayCarousel mx-2 carousel-portrait" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/cosplay/pictures/red/Red.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>📷 Michel Mikedaix</p>
+          </div>
         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCosplayPres" data-bs-slide="prev">
+        <i class="fas fa-angle-left carousel-arrow"></i>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCosplayPres" data-bs-slide="next">
+        <i class="fas fa-angle-right carousel-arrow"></i>
+      </button>
     </div>
+  </div>
+
+  <div class="m-2">
+    <div class="d-flex navigation">
+      <button type="button" (click)="clickOnSection('THRALL')" routerLink="/cosplay/thrall" [skipLocationChange]="true"
+        class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Thrall</button>
+      <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true"
+        class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
+      <button type="button" (click)="clickOnSection('SOGEKING')" routerLink="/cosplay/sogeking"
+        [skipLocationChange]="true" class="btn navigation-btn">Sogeking <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
 </div>
-
-

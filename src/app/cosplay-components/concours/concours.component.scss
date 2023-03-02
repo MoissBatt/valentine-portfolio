@@ -11,18 +11,9 @@
 }
 
 
-.mh-concours {
+.image-concours {
     margin-right: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.mh-concours-1 {
-    width: 200px; 
-}
-
-.mh-concours-2 {
-
-    width: 150px; 
 }
 
 .red-color{
@@ -30,7 +21,7 @@
 }
 
 @media screen and (max-width: 1550px) {
-    .video, .mag{
+    .illustration {
         flex-direction: column;
     }
     
@@ -57,3 +48,49 @@
     text-align: justify;
 }
 
+.accordion-button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 15px;
+    background-color: #fff5f5 !important;
+    padding: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #4F4F4F;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: #4F4F4F !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f4f4f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+
+.rounded-circle{
+    width: 45px;
+    height: 45px;
+}
+
+@media screen and (max-width: 1050px) {
+    .rounded-circle{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.date{
+    width: 20%;
+    text-align: right;
+}
+
+.concours{
+    width: 70%;
+}
+
+.concours-txt{
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.prix-txt{
+    margin-bottom: 0;
+}

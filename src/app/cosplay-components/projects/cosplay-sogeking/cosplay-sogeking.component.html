@@ -1,0 +1,25 @@
+<div #sectionDivSogeking class="pt-1">
+    <h3 class="red-color m-1 text-center">Sogeking (en cours)</h3>
+    <h4 class="red-color m-2 text-center">One Piece</h4>
+    <div class="m-2 d-flex justify-content-center pres">
+        <p class="presentation m-2">
+            En continuité avec la princesse Bubblegum, voilà un projet un peu plus léger mais pas facile pour autant. 
+            J'ai commencé à regarder l'anime One Piece en novembre 2022 et j'ai ressenti le grand désir de faire un cosplay du merveilleux personnage de 
+            <span class="red-color">Sogeking</span> !
+
+            <br><br> Il possède des vêtements simples pour apprendre les bases de la couture traditionnelle et une très grande arme et ce n'est plus un secret que j'apprécie les props géants ! 
+            
+            <br><br> Il est possible de suivre mon avancement sur ce projet sur  
+            <a style="color: #ac2bac;" target="_blank" href="https://www.instagram.com/moissbatt_cosplay/">instagram !</a>
+        </p>
+        <img class="refViewer m-2"  alt="Reference du cosplay" src="assets/cosplay/projets/Sogeking_ref.PNG">
+    </div>
+
+    <div class="m-2">
+        <div class="d-flex navigation">
+            <button type="button" (click)="clickOnSection('RED')" routerLink="/cosplay/red" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Red</button>
+            <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
+            <button type="button" (click)="clickOnSection('AURON')" routerLink="/cosplay/auron" [skipLocationChange]="true" class="btn navigation-btn">Auron <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
