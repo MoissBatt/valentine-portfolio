@@ -24,6 +24,14 @@
     border-radius: 6px;
 }
 
+.overtitle {
+    font-weight: bold;
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .title {
     font-weight: bold;
     position: absolute;
