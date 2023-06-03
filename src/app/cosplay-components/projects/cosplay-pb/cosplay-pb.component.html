@@ -1,4 +1,12 @@
 <div #sectionDivPb class="pt-1">
+    <div class="m-2">
+        <div class="d-flex navigation">
+            <button type="button" (click)="clickOnSection('STEAMPUNK')" [skipLocationChange]="true" routerLink="/cosplay/steampunk" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Steampunk</button>
+            <button type="button" (click)="clickOnSection('PROJETS')" [skipLocationChange]="true" routerLink="/cosplay" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
+            <button type="button" (click)="clickOnSection('TYRANDE')" [skipLocationChange]="true" routerLink="/cosplay/tyrande" class="btn navigation-btn">Tyrande <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    
     <h3 class="red-color m-1 text-center">Princesse Bubblegum</h3>
     <h4 class="red-color m-2 text-center">Adventure Time</h4>
     <div class="m-2 d-flex justify-content-center pres">

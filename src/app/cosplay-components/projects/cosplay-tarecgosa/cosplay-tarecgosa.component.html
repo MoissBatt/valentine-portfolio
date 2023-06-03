@@ -1,4 +1,12 @@
 <div #sectionDivTarecgosa class="pt-1">
+    <div class="m-2">
+        <div class="d-flex navigation">
+            <button type="button" (click)="clickOnSection('AURON')" routerLink="/cosplay/auron" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Auron</button>
+            <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
+            <button type="button" (click)="clickOnSection('STEAMPUNK')" routerLink="/cosplay/steampunk" [skipLocationChange]="true" class="btn navigation-btn">Steampunk <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    
     <h3 class="red-color m-1 text-center">Tarecgosa (en cours)</h3>
     <h4 class="red-color m-2 text-center">World of Warcraft - Zach Fisher Art</h4>
     <div class="m-2 d-flex justify-content-center pres">
