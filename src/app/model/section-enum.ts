@@ -1,7 +1,6 @@
 export enum SectionEnum {
     PRESENTATION = 'PRESENTATION',
     CONCOURS = 'CONCOURS',
-    CONVENTIONS = 'CONVENTIONS',
     PROJETS = 'PROJETS',
     FORMATIONS = 'FORMATIONS',
     EXPERIENCES = 'EXPERIENCES',
@@ -13,6 +12,6 @@ export enum SectionEnum {
     STEAMPUNK = 'STEAMPUNK',
     PB = 'PB',
     TARECGOSA = 'TARECGOSA',
-    AURON = 'AURON',
-    SOGEKING = 'SOGEKING'
+    SOGEKING = 'SOGEKING',
+    TALANJI = 'TALANJI'
 }

@@ -43,9 +43,6 @@ export class NavbarComponent implements OnInit {
         case ('CONCOURS'):
           this.scrollService.notifyScroll$(SectionEnum.CONCOURS);
           break;
-        case ('CONVENTIONS'):
-          this.scrollService.notifyScroll$(SectionEnum.CONVENTIONS);
-          break;
         case ('PROJETS'):
           this.scrollService.notifyScroll$(SectionEnum.PROJETS);
           break;

@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="navbar-nav flex-row mb-2 mb-lg-0">
       <li class="nav-item d-flex">
-        <button class="nav-link" mat-button [matMenuTriggerFor]="menuDev">DÉVELOPPEUSE</button>
+        <button class="nav-link" mat-button [matMenuTriggerFor]="menuDev">PARCOURS PRO</button>
         <mat-menu #menuDev="matMenu" class="dropdown">
           <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('EXPERIENCES')" routerLink="/dev"
           [skipLocationChange]="true">Expériences</button>
@@ -20,12 +20,10 @@
         </a>
       </li>
       <li class="nav-item d-flex">
-        <button class="nav-link" mat-button [matMenuTriggerFor]="menuCos">COSPLAYEUSE</button>
+        <button class="nav-link" mat-button [matMenuTriggerFor]="menuCos">COSPLAY LIFE</button>
         <mat-menu #menuCos="matMenu" class="dropdown">
           <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('PRESENTATION')" routerLink="/cosplay"
           [skipLocationChange]="true">Présentation</button>
-          <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('CONVENTIONS')" routerLink="/cosplay"
-          [skipLocationChange]="true">Conventions</button>
           <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('CONCOURS')" routerLink="/cosplay"
           [skipLocationChange]="true">Concours</button>
           <button mat-menu-item class="text-center dropdown-item" (click)="clickOnSection('PROJETS')" routerLink="/cosplay"

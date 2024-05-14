@@ -11,7 +11,6 @@ import { SectionEnum } from '../model/section-enum';
 export class CosplayComponent implements OnInit {
   @ViewChild('sectionDivPresentation') private sectionDivPresentation: ElementRef;
   @ViewChild('sectionDivConcours') private sectionDivConcours: ElementRef;
-  @ViewChild('sectionDivConventions') private sectionDivConventions: ElementRef;
   @ViewChild('sectionDivProjets') private sectionDivProjets: ElementRef;
 
   constructor(private scrollService: ScrollService) { }
@@ -28,9 +27,6 @@ export class CosplayComponent implements OnInit {
         break;
       case SectionEnum.CONCOURS:
         this.scrollService.scrollToElement(this.sectionDivConcours);
-        break;
-      case SectionEnum.CONVENTIONS:
-        this.scrollService.scrollToElement(this.sectionDivConventions)
         break;
       case SectionEnum.PROJETS:
         this.scrollService.scrollToElement(this.sectionDivProjets)

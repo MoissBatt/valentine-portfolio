@@ -1,32 +1,80 @@
 <div #sectionDivTarecgosa class="pt-1">
     <div class="m-2">
         <div class="d-flex navigation">
-            <button type="button" (click)="clickOnSection('AURON')" routerLink="/cosplay/auron" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Auron</button>
+            <button type="button" (click)="clickOnSection('SOGEKING')" routerLink="/cosplay/sogeking" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Sogeking</button>
             <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
-            <button type="button" (click)="clickOnSection('STEAMPUNK')" routerLink="/cosplay/steampunk" [skipLocationChange]="true" class="btn navigation-btn">Steampunk <i class="fa-solid fa-arrow-right"></i></button>
+            <button type="button" (click)="clickOnSection('TALANJI')" routerLink="/cosplay/talanji" [skipLocationChange]="true" class="btn navigation-btn">Secret <i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
     
-    <h3 class="red-color m-1 text-center">Tarecgosa (en cours)</h3>
-    <h4 class="red-color m-2 text-center">World of Warcraft - Zach Fisher Art</h4>
+    <h3 class="red-color m-1 text-center">Tarecgosa</h3>
+    <h4 class="red-color m-2 text-center">World of Warcraft - Zach Fisher</h4>
     <div class="m-2 d-flex justify-content-center pres">
         <p class="presentation m-2">
-            Mon projet actuel est très ambitieux ! Je suis de retour dans l'univers de World of Warcraft et c'est un plaisir de sortir des sentiers battus avec un design original de Zach Fisher Art.
-            Cette version chevalier de la mort de cette grande dragonne me motive un maximum et je veux mettre en oeuvre tout ce que j'ai appris jusqu'à maintenant pour réaliser une petite folie !
+            Je suis de retour dans l'univers de World of Warcraft et c'est un plaisir de sortir des sentiers battus avec un design original de Zach Fisher.
+            Cette version chevalier de la mort de cette grande dragonne me motive un maximum et j'ai pu mettre en oeuvre tout ce que j'ai appris jusqu'à maintenant pour réaliser cette petite folie !
             
-            <br><br> C'est donc <span class="red-color">Tarecgosa</span> qui est la suivant sur ma liste des gros projets !
-            
-            <br><br> Il est possible de suivre mon avancement sur ce projet sur  
-            <a style="color: #ac2bac;" target="_blank" href="https://www.instagram.com/moissbatt_cosplay/">instagram !</a>
+            <br><br> C'est <span class="red-color">Tarecgosa</span>, dragonne du vol bleu !
+        
+            <br><br> 🥈 Dauphine à la sélection CFC Play Azur Nice 2024
         </p>
         <img class="refViewer m-2"  alt="Reference du cosplay" src="assets/cosplay/projets/Tarecgosa_ref.PNG">
     </div>
 
+    <h4 class="red-color m-2">Photographies</h4>
+  <div class="m-2 d-flex pictures">
+    <div class="card mx-2 credits mt-0 " style="width: 18rem;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title red-color text-center">Crédits 📸</h5>
+        <p class="card-text">
+          Ces photos de Tarecgosa ont été prises à la Play Azur par 
+          <a class="red-color" target="_blank" href="https://www.instagram.com/geminiyann/">Yann CHAMPION</a>,
+          <a class="red-color" target="_blank" href="https://www.instagram.com/tony_a.photographe/">Tony A. Photographe</a>,
+          <a class="red-color" target="_blank" href="https://www.instagram.com/sinisakaze/">Sinisakaze</a>
+        </p>
+      </div>
+    </div>
+    <div id="carouselCosplayPres" class="carousel slide cosplayCarousel mx-2 carousel-portrait" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/cosplay/pictures/tarecgosa/Tarecgosa_Sinikaze_5.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>📷 Sinisakaze</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/cosplay/pictures/tarecgosa/Tarecgosa_TonyAPhotographe_GeminiYann_PlayAzur_1.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>📷 Tony A. Photographe & Gemini Yann</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/cosplay/pictures/tarecgosa/Tarecgosa_TonyAPhotographe_GeminiYann_PlayAzur_4.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>📷 Tony A. Photographe & Gemini Yann</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/cosplay/pictures/tarecgosa/Tarecgosa_Sinikaze_6.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>📷 Sinisakaze</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCosplayPres" data-bs-slide="prev">
+        <i class="fas fa-angle-left carousel-arrow"></i>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCosplayPres" data-bs-slide="next">
+        <i class="fas fa-angle-right carousel-arrow"></i>
+      </button>
+    </div>
+  </div>
+
     <div class="m-2">
         <div class="d-flex navigation">
-            <button type="button" (click)="clickOnSection('AURON')" routerLink="/cosplay/auron" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Auron</button>
+            <button type="button" (click)="clickOnSection('SOGEKING')" routerLink="/cosplay/sogeking" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-arrow-left"></i> Sogeking</button>
             <button type="button" (click)="clickOnSection('PROJETS')" routerLink="/cosplay" [skipLocationChange]="true" class="btn navigation-btn"><i class="fa-solid fa-bars"></i></button>
-            <button type="button" (click)="clickOnSection('STEAMPUNK')" routerLink="/cosplay/steampunk" [skipLocationChange]="true" class="btn navigation-btn">Steampunk <i class="fa-solid fa-arrow-right"></i></button>
+            <button type="button" (click)="clickOnSection('TALANJI')" routerLink="/cosplay/talanji" [skipLocationChange]="true" class="btn navigation-btn">Secret <i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
 </div>
