@@ -1,10 +1,11 @@
 # Valentine Bouché | Portfolio
-Portfolio de Valentine Bouché, étudiante en Master 2 MIAGE à l'IDMC de Nancy, développeuse Java et cosplayeuse.
+Portfolio de Valentine Bouché, app project manager @iWE et cosplayeuse.
 
 **Known issues & to do list:**
 - Système de mailing pour contact
 
 **Changelog :**
+- v3.3 - 12/05/2024 : MaJ parcours pro + book Red & Tarecgosa + conventions et concours
 - v3.2 - 26/04/2023 : MaJ concours Japan Manga Family Martigues
 - v3.1 - 26/04/2023 : MaJ concours Mang'Azur Toulon
 - v3.0 - 02/03/2023 : Nouveau composant concours - MaJ convention & projets

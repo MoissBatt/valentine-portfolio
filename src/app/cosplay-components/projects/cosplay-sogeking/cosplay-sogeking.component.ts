@@ -35,8 +35,8 @@ export class CosplaySogekingComponent implements OnInit {
         case ('RED'):
           this.scrollService.notifyScroll$(SectionEnum.RED);
           break;
-        case ('AURON'):
-          this.scrollService.notifyScroll$(SectionEnum.AURON);
+        case ('TARECGOSA'):
+          this.scrollService.notifyScroll$(SectionEnum.TARECGOSA);
           break;
         case ('PROJETS'):
           this.scrollService.notifyScroll$(SectionEnum.PROJETS);

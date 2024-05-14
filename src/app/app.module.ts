@@ -21,16 +21,15 @@ import { ScrollService } from './service/scroll-service';
 import { MentionsModalComponent } from './home-page-components/mentions-modal/mentions-modal.component';
 import { PresentationComponent } from './cosplay-components/presentation/presentation.component';
 import { ConcoursComponent } from './cosplay-components/concours/concours.component';
-import { ConventionsComponent } from './cosplay-components/conventions/conventions.component';
 import { ProjetsComponent } from './cosplay-components/projets/projets.component';
 import { CosplayRedComponent } from './cosplay-components/projects/cosplay-red/cosplay-red.component';
 import { CosplayThrallComponent } from './cosplay-components/projects/cosplay-thrall/cosplay-thrall.component';
 import { CosplayPbComponent } from './cosplay-components/projects/cosplay-pb/cosplay-pb.component';
 import { CosplaySteampunkComponent } from './cosplay-components/projects/cosplay-steampunk/cosplay-steampunk.component';
 import { CosplayTyrandeComponent } from './cosplay-components/projects/cosplay-tyrande/cosplay-tyrande.component';
-import { CosplayTarecgosaComponent } from './cosplay-components/projects/cosplay-tarecgosa/cosplay-tarecgosa.component'; 
-import { CosplayAuronComponent } from './cosplay-components/projects/cosplay-auron/cosplay-auron.component'; 
-import { CosplaySogekingComponent } from './cosplay-components/projects/cosplay-sogeking/cosplay-sogeking.component'; 
+import { CosplayTarecgosaComponent } from './cosplay-components/projects/cosplay-tarecgosa/cosplay-tarecgosa.component';
+import { CosplaySogekingComponent } from './cosplay-components/projects/cosplay-sogeking/cosplay-sogeking.component';
+import { CosplayTalanjiComponent } from './cosplay-components/projects/cosplay-talanji/cosplay-talanji.component'; 
 
 @NgModule({
   declarations: [
@@ -46,7 +45,6 @@ import { CosplaySogekingComponent } from './cosplay-components/projects/cosplay-
     MentionsModalComponent,
     PresentationComponent,
     ConcoursComponent,
-    ConventionsComponent,
     ProjetsComponent,
     CosplayRedComponent,
     CosplayThrallComponent,
@@ -54,8 +52,8 @@ import { CosplaySogekingComponent } from './cosplay-components/projects/cosplay-
     CosplaySteampunkComponent,
     CosplayTyrandeComponent,
     CosplayTarecgosaComponent,
-    CosplayAuronComponent,
-    CosplaySogekingComponent
+    CosplaySogekingComponent,
+    CosplayTalanjiComponent
   ],
   imports: [
     BrowserModule,

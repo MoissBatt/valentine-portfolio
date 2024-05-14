@@ -35,8 +35,8 @@ export class CosplayTarecgosaComponent implements OnInit {
         case ('STEAMPUNK'):
           this.scrollService.notifyScroll$(SectionEnum.STEAMPUNK);
           break;
-        case ('AURON'):
-          this.scrollService.notifyScroll$(SectionEnum.AURON);
+        case ('SOGEKING'):
+          this.scrollService.notifyScroll$(SectionEnum.SOGEKING);
           break;
         case ('PROJETS'):
           this.scrollService.notifyScroll$(SectionEnum.PROJETS);

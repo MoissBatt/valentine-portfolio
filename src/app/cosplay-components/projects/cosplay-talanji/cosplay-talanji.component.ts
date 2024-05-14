@@ -4,13 +4,13 @@ import { ScrollService } from '../../../service/scroll-service';
 import { SectionEnum } from '../../../model/section-enum';
 
 @Component({
-  selector: 'app-cosplay-auron',
-  templateUrl: './cosplay-auron.component.html',
-  styleUrls: ['./cosplay-auron.component.scss']
+  selector: 'app-cosplay-talanji',
+  templateUrl: './cosplay-talanji.component.html',
+  styleUrls: ['./cosplay-talanji.component.scss']
 })
-export class CosplayAuronComponent implements OnInit {
+export class CosplayTalanjiComponent implements OnInit {
 
-  @ViewChild('sectionDivAuron') private sectionDivAuron: ElementRef;
+  @ViewChild('sectionDivTalanji') private sectionDivTalanji: ElementRef;
 
   constructor(private scrollService: ScrollService) { }
 
@@ -20,8 +20,8 @@ export class CosplayAuronComponent implements OnInit {
 
   public scrollToSpecificSection(sectionToScroll: SectionEnum): void {
     switch (sectionToScroll) {
-      case SectionEnum.AURON:
-        this.scrollService.scrollToElement(this.sectionDivAuron);
+      case SectionEnum.TALANJI:
+        this.scrollService.scrollToElement(this.sectionDivTalanji);
         break;
       default:
         console.log('No ' + sectionToScroll + ' to scroll in')
@@ -32,11 +32,11 @@ export class CosplayAuronComponent implements OnInit {
   clickOnSection(section: string) {
     timer(1).pipe(tap(x => {
       switch (section) {
+        case ('STEAMPUNK'):
+          this.scrollService.notifyScroll$(SectionEnum.STEAMPUNK);
+          break;
         case ('TARECGOSA'):
           this.scrollService.notifyScroll$(SectionEnum.TARECGOSA);
-          break;
-        case ('SOGEKING'):
-          this.scrollService.notifyScroll$(SectionEnum.SOGEKING);
           break;
         case ('PROJETS'):
           this.scrollService.notifyScroll$(SectionEnum.PROJETS);
